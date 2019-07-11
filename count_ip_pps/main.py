@@ -41,11 +41,14 @@ def get_pps_dict():
 
     return pps_dict 
 
+def sort_by_most_traffic(dict):
+    return "Not Implemented"
 
 def main():
     ip_dict = get_ips_dict()
     pps_dict = get_pps_dict()
-    print(pps_dict)
+    
+    sorted_pps = sort_by_most_traffic(get_pps_dict)
     
 
 
