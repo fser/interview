@@ -2,7 +2,8 @@
 
 ## Problem statement
 
-The goal of this exercise is to sum all pps entries per IP and display the 10 IPs having the more traffic.
+The goal of this exercise is to sum all pps (packet per second) entries per IP
+and display the 10 IPs having the more traffic.
 
 ## Dataset
 
@@ -12,7 +13,6 @@ For each of those files, the first line describes the file format, and starts wi
 > **Warning**
 > All the entries in the file may not be clean, nor correct.
 
-
 ### ips.dat format
 
 | IPv4 address | UUID |
@@ -20,6 +20,7 @@ For each of those files, the first line describes the file format, and starts wi
 | An IPv4 address | A unique ID associated with that IP |
 
 ### pps.dat format
+
 Several probes are done for each IPs. Hence, there might be several lines having the same UUID.
 
 | UUID | Number of packets per second |
@@ -27,18 +28,20 @@ Several probes are done for each IPs. Hence, there might be several lines having
 | The unique identifier, which links with the previous file | The number of packets for that measure |
 
 ## Expected result
+
 Given those two files, your program is expected to output a list of the 10 IPs having the most packets per second.
 
 ### Example
+
 This example only contains 3 IPs, the actual file will have more IPs.
 
-Sample IP file
+Sample ips.dat file
 
     1.1.1.1 xxxxxx
     1.1.1.2 yyyyyy
     1.1.1.3 zzzzzz
 
-Sample pps file
+Sample pps.dat file
 
     xxxxxx 5
     yyyyyy 1
